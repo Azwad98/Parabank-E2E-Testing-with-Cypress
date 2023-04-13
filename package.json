@@ -1,0 +1,27 @@
+{
+  "name": "itv-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azwad98/itv-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azwad98/itv-test/issues"
+  },
+  "homepage": "https://github.com/Azwad98/itv-test#readme",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.17.0",
+    "cypress": "^12.9.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4"
+  }
+}
