@@ -2,6 +2,7 @@ import webpackPreprocessor from '@cypress/webpack-preprocessor';
 
 const config: Cypress.ConfigOptions = {
   e2e: {
+    baseUrl: 'https://parabank.parasoft.com/parabank',
     setupNodeEvents(on) {
       on(
         'file:preprocessor',

@@ -1,0 +1,15 @@
+{
+  "register": {
+    "firstName": "Mohammad",
+    "lastName": "Rashid",
+    "email": "mo.rashid@example.com",
+    "password": "testPassword",
+    "address": "123 Main Street",
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10001",
+    "phone": "123-456-7890",
+    "ssn": "123-45-6789",
+    "username": "mo_rash1"
+  }
+}

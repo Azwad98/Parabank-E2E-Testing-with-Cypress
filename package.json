@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Azwad98/itv-test#readme",
   "devDependencies": {
+    "@cypress/webpack-dev-server": "^3.4.1",
     "@cypress/webpack-preprocessor": "^5.17.0",
     "cypress": "^12.9.0",
     "ts-loader": "^9.4.2",
