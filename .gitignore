@@ -1,0 +1,14 @@
+# Node.js related
+node_modules/
+npm-debug.log
+
+# Cypress related
+cypress/screenshots/
+cypress/videos/
+
+# IDE specific
+.idea/
+.vscode/
+*.iml
+*.log
+.DS_Store
