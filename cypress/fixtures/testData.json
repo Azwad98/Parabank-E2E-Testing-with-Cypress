@@ -10,5 +10,16 @@
     "phone": "123-456-7890",
     "ssn": "123-45-6789",
     "username": "mo_rashid"
+  },
+  "login": {
+    "validUser": {
+      "fullName": "Mohammad Rashid",
+      "username": "mo_rashid",
+      "password": "testPassword"
+    },
+    "invalidUser": {
+      "username": "wronguser",
+      "password": "wrongpass"
+    }
   }
 }
