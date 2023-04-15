@@ -28,8 +28,23 @@ class RegisterPage {
     cy.get('#repeatedPassword').type(password);
   }
 
+  fillField(fieldName: string, value: string) {
+    cy.get(`#${fieldName}`).type(value);
+  }
+
   submitForm() {
     cy.get('input[type="submit"].button[value="Register"]').click();
+  }
+
+  fillFormWithMissingFields(formData: any, missingFields: string[]) {
+    for (const field in formData) {
+      if (!missingFields.includes(field)) {
+        const inputSelector = field.includes('.')
+          ? `#${field.replace('.', '\\.')}`
+          : `#${field}`;
+        cy.get(inputSelector).type(formData[field]);
+      }
+    }
   }
 }
 

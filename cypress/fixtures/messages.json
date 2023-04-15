@@ -1,0 +1,22 @@
+{
+  "register": {
+    "success": "Your account was created successfully. You are now logged in.",
+    "error": {
+      "missingFields": {
+        "firstName": "First name is required",
+        "lastName": "Last name is required",
+        "address": {
+          "street": "Address is required.",
+          "city": "City is required.",
+          "state": "State is required.",
+          "zipCode": "Zip Code is required."
+        },
+        "phone": "Phone number is required",
+        "ssn": "SSN is required",
+        "username": "Username is required",
+        "email": "Email is required",
+        "password": "Password is required"
+      }
+    }
+  }
+}

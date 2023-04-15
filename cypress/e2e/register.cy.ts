@@ -2,10 +2,14 @@ import RegisterPage from '../pageObjects/register.page';
 
 describe('Register Test', () => {
   let testData: any;
+  let messages: any;
 
-  before(() => {
+  beforeEach(() => {
     cy.fixture('testData').then((data) => {
       testData = data;
+    });
+    cy.fixture('messages').then((data) => {
+      messages = data;
     });
   });
 
@@ -26,9 +30,6 @@ describe('Register Test', () => {
     RegisterPage.submitForm();
 
     // Add any assertions to verify the successful registration, e.g., a successful registration message
-    cy.get('#rightPanel > p').should(
-      'contain',
-      'Your account was created successfully. You are now logged in.'
-    );
+    cy.get('#rightPanel > p').should('contain', messages.register.success);
   });
 });
