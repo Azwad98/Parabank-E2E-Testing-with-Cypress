@@ -24,8 +24,8 @@ describe('Register Test', () => {
       testData.register.zipCode,
       testData.register.phone,
       testData.register.ssn,
-      testData.register.username,
-      testData.register.password
+      testData.user.validUser.username,
+      testData.user.validUser.password
     );
     RegisterPage.submitForm();
 

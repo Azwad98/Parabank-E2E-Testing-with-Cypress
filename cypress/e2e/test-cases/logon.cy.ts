@@ -12,8 +12,8 @@ describe('Login Test', () => {
   it('should log in with valid credentials', () => {
     IndexPage.visit();
     IndexPage.fillLoginForm(
-      testData.login.validUser.username,
-      testData.login.validUser.password
+      testData.user.validUser.username,
+      testData.user.validUser.password
     );
     IndexPage.submitLoginForm();
 
