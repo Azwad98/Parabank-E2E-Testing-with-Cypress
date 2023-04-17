@@ -5,6 +5,7 @@ npm-debug.log
 # Cypress related
 cypress/screenshots/
 cypress/videos/
+cypress/results/
 
 # IDE specific
 .idea/
