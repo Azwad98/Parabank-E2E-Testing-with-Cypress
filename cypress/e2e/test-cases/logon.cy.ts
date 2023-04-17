@@ -1,4 +1,4 @@
-import IndexPage from '../pageObjects/index.page';
+import IndexPage from '../../pageObjects/index.page';
 
 describe('Login Test', () => {
   let testData: any;
