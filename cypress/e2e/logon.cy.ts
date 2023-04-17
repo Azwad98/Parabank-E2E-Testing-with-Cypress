@@ -1,4 +1,4 @@
-import IndexPage from '../../pageObjects/index.page';
+import IndexPage from '../pageObjects/index.page';
 
 describe('Login Test', () => {
   let testData: any;
@@ -19,7 +19,7 @@ describe('Login Test', () => {
 
     cy.get('.smallText').should(
       'contain',
-      'Welcome ' + testData.login.validUser.fullName
+      'Welcome ' + testData.user.validUser.fullName
     );
 
     cy.get('a[href="/parabank/logout.htm"]').click();

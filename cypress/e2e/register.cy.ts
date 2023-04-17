@@ -1,4 +1,4 @@
-import RegisterPage from '../../pageObjects/register.page';
+import RegisterPage from '../pageObjects/register.page';
 
 describe('Register Test', () => {
   let testData: any;
