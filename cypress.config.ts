@@ -3,6 +3,15 @@ import webpackPreprocessor from '@cypress/webpack-preprocessor';
 const config: Cypress.ConfigOptions = {
   e2e: {
     baseUrl: 'https://parabank.parasoft.com/parabank',
+    reporter: 'mochawesome',
+    reporterOptions: {
+      reportDir: 'cypress/results',
+      charts: true,
+      overwrite: false,
+      html: false,
+      json: true,
+      quiet: true,
+    },
     setupNodeEvents(on) {
       on(
         'file:preprocessor',
