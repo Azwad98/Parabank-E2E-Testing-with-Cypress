@@ -9,17 +9,13 @@
     "zipCode": "10001",
     "phone": "123-456-7890",
     "ssn": "123-45-6789",
-    "username": "mo_rashid"
+    "username": "mo_rashid1"
   },
   "login": {
     "validUser": {
       "fullName": "Mohammad Rashid",
       "username": "mo_rashid",
       "password": "testPassword"
-    },
-    "invalidUser": {
-      "username": "wronguser",
-      "password": "wrongpass"
     }
   }
 }
