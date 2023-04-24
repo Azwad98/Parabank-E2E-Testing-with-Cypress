@@ -7,6 +7,9 @@ cypress/screenshots/
 cypress/videos/
 cypress/results/
 
+# Temp file related
+cypress/fixtures/temp*.json
+
 # IDE specific
 .idea/
 .vscode/
