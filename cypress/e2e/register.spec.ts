@@ -1,4 +1,5 @@
 import RegisterPage from '../pageObjects/register.page';
+import { generateRandomString } from '../utils/randomString';
 
 describe('Register Test', () => {
   let testData: any;
@@ -7,6 +8,9 @@ describe('Register Test', () => {
   beforeEach(() => {
     cy.fixture('testData').then((data) => {
       testData = data;
+      const randUsername = generateRandomString(10);
+      testData.user.validUser.username = randUsername;
+      cy.writeFile('cypress/fixtures/tempStorage.json', { randUsername });
     });
     cy.fixture('messages').then((data) => {
       messages = data;
